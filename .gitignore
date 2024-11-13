@@ -1,0 +1,7 @@
+venv
+.vscode
+school
+create_player.py
+Organizer_login.py
+school_personnel.py
+school_register.py
