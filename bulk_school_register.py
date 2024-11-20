@@ -255,13 +255,13 @@ def generate_random_email():
 def generate_random_emis():
     return ''.join(random.choices(string.digits, k=5))
 
-for i in range(0,11):
-        driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-        driver.get("https://school-dev.khelconnect.com/")
-        driver.maximize_window()
-        driver.implicitly_wait(10)
-        time.sleep(3)
 
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+driver.get("https://school-dev.khelconnect.com/")
+driver.maximize_window()
+driver.implicitly_wait(10)
+time.sleep(3)
+for i in range(0,11):
         #click on register
         driver.find_element(*(By.XPATH,"//button[normalize-space()='Register']")).click()
         time.sleep(3)
@@ -346,5 +346,5 @@ for i in range(0,11):
         # Click Save
         driver.find_element(*(By.XPATH,"//button[normalize-space()='Save']")).click()
         print(f"complete {data[i]["username"]}")
-        time.sleep(2)
-        driver.quit()
+time.sleep(2)
+driver.quit()
