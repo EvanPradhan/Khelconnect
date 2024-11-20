@@ -75,7 +75,7 @@ driver.find_element(*(By.XPATH,"//button[normalize-space()='Login']")).click()
 time.sleep(3)
 
 # Click People and player
-driver.find_element(*(By.XPATH,"//p[@class='chakra-text css-1nhpy1b']")).click()
+driver.find_element(*(By.XPATH,"8")).click()
 driver.find_element(*(By.XPATH,"//div[@class='css-7a2b4p']//div[2]")).click()
 
 for i in range(0,2):
